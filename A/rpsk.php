@@ -28,7 +28,7 @@ if(!isset($_SESSION['nama'])){
   </div>
 </div>
 
-    </body>
-    </html>
+</body>
+</html>
 
 

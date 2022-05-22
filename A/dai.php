@@ -7,7 +7,6 @@
   <div class="card-header text-center bg-primary text-white">Input data Pegawai</div>
   <div class="card-body" style="color:black">
 <form method="POST" action="dais.php" enctype="multipart/form-data"> 	
-
   <div class="form-row">
     <div class="form-group col-md-4">
       <label for='nip' >NIP</label>

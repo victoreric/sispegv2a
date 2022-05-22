@@ -35,8 +35,8 @@ if($level=='1'){
         <link href="../vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
 
         <!-- forPdfMake -->
-        <link rel="stylesheet" type="text/css" href="../cssvic/pdfmake.css"> 
-        <script type="text/javascript" src="../cssvic/pdfmake.js"></script>
+        <!-- <link rel="stylesheet" type="text/css" href="../cssvic/pdfmake.css"> 
+        <script type="text/javascript" src="../cssvic/pdfmake.js"></script> -->
 
         <style>
             .table{

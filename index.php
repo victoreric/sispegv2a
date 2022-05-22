@@ -53,7 +53,7 @@ include "link.php";
             </div>
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
             <div class="form-group">
-                <input type="text" name='user' class="form-control form-control-user" pattern="[A-Za-z0-9]{} placeholder="Masukan NIP sebagai Username">
+                <input type="text" name='user' class="form-control form-control-user" pattern="[A-Za-z0-9]{}" placeholder="Masukan NIP sebagai Username">
             </div>
             <div class="form-group">
                 <input type="password"  name='pass' class="form-control form-control-user" id="" placeholder="Password">
