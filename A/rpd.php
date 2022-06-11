@@ -6,8 +6,7 @@ include '../link.php';
 <div class="container-fluid">
 <div class="card">
   <div class="card-header text-center bg-primary text-white">Data Riwayat Pangkat/ Golongan Pegawai</div>
-  <div class="card-body">
-<!-- <a href='drpangkat.php' class='btn-sm btn-info glyphicon glyphicon-arrow ' > Kembali  </a> <p> -->
+  <div class="card-body table-responsive">
 
         <table id="" class="table table-striped table-bordered table-hover bg-active">  
            <thead>  
@@ -37,7 +36,7 @@ include '../link.php';
           <td>$no </td>
           <td colspan='6'>".$hasil['gelardepan']."  ".$hasil['nama']. ", ".$hasil['gelarbelakang']." <br> NIP. ".$hasil['nip']."   </td>
          
-          <td><a href='rpi.php?n=".$hasil['nip']."' class='btn-sm btn-info glyphicon glyphicon-plus-sign'> Tambah </a></td>
+          <td><a href='rpi.php?n=".$hasil['nip']."' class='btn-sm btn-info fa fa-plus-circle' role='button'>  </a></td>
           </tr>
         ";
  
@@ -66,23 +65,18 @@ include '../link.php';
            <td><a href='rpsk.php?f=".$nilai['filesk'] ."' target='blank'> " .$nilai['filesk']."</a></td>
            <td><a href='rpe.php?id=$id' class='btn-sm btn-warning fas fa-edit'> </a>"; ?>
 
-          <a href="rph.php?id=<?php echo $id ;?>" class="btn-sm btn-danger fas fa-trash-alt" onclick="javascript:return confirm('Anda Yakin Akan Menghapus Data??')"> </a> 
+          <a href="rph.php?id=<?php echo $id ;?>" class="btn-sm btn-danger fas fa-trash-alt mt-2" onclick="javascript:return confirm('Anda Yakin Akan Menghapus Data??')"> </a> 
         <?php 
         echo "
         </td>
-
            </tr>
            "; 
           }
         }
       }
-
       ?>
        </table>
   </div>
 </div>
 </div>
-
- 
-
 <?php include '../footer.php';  ?>

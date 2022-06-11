@@ -6,7 +6,7 @@
 <div class="container">
 <div class="card mb-5">
   <div class="card-header text-primary h4 text-center">Daftar pegawai aktif berdasarkan Kualifikasi</div>
-  <div class="card-body">
+  <div class="card-body table-responsive">
   <table id="example1" class="table table-hover table-bordered">
     <thead>
       <tr class="bg-secondary text-white">

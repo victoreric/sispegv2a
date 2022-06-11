@@ -175,7 +175,7 @@
             </div>
                 
             <div class="tab-pane container fade" id="pangkat">
-            <table id="" class="table table-striped table-bordered table-hover"  style="color:black">  
+            <table id="" class="table table-striped table-bordered table-hover table-responsive"  style="color:black">  
                 <thead class="text-white">  
                     <tr class="bg-primary text-center"> 
                     <th style="vertical-align: middle"> No </th>	

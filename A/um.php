@@ -6,10 +6,10 @@ include '../link.php';?>
 <div class="card mb-5">
   <div class="card-header bg-primary text-white text-center h5"> User Management 
   </div>
-  <div class="card-body">
+  <div class="card-body table-responsive">
   <!-- <a href="" class="btn-sm btn-info far fa-file"> Tambah data </a> -->
   <!-- <p></p> -->
-  <table id="example1" class="table table-bordered table-hover table-responsive-justify ">
+  <table id="example1" class="table table-bordered table-hover table-responsive-justify">
 		<thead>
 			<tr class="bg-primary text-center">
 				<th>No.</th>
@@ -33,9 +33,9 @@ include '../link.php';?>
 				<td><?php echo $hasil['user'];  ?></td>
 				<td><?php echo $hasil['level'];  ?></td>
 				<td><?php echo $hasil['active'];  ?></td>
-				<td class='text-center' > <a href='ume.php?id= <?php echo $hasil['id_login'] ;?> ' class='btn-sm btn-primary' > edit</a> &nbsp
+				<td class='text-center' > <a href='ume.php?id= <?php echo $hasil['id_login'] ;?> ' class='btn-sm btn-warning fas fa-edit' > edit</a>
      
-           		<a href="umh.php?id= <?php  echo $hasil['id_login'] ;?>" class="btn-sm btn-danger" onclick="javascript:return confirm('Anda Yakin menghapus data ini?')" > hapus </a> 
+           		<a href="umh.php?id= <?php  echo $hasil['id_login'] ;?>" class="btn-sm btn-danger fas fa-trash-alt mt-2" onclick="javascript:return confirm('Anda Yakin menghapus data ini?')" > hapus </a> 
 				</td>
 			</tr>
 		

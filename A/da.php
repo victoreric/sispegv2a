@@ -6,9 +6,9 @@
 <div class="container-fluid">
 <div class="card">
   <div class="card-header text-center bg-primary text-white">Pengolahan Data Pegawai</div>
-  <div class="card-body">
+  <div class="card-body table-responsive">
 
-<a href="dai.php" class="btn-sm btn-info far fa-file"> Tambah data </a>
+<a href="dai.php" class="btn-sm btn-info fa fa-plus-circle">   </a>
        <p>
         <table id="example1" class="table table-striped table-bordered table-hover bg-active">  
            <thead>  
@@ -53,9 +53,9 @@
                <th>" .$hasil['alamat']. "</th> "; 
             ?>
               <th>
-                <a href="dah.php?n=<?php echo "".$hasil['nip'] ; ?>" class="btn-sm btn-danger fas fa-fas fa-trash-alt" onclick="javascript:return confirm('Anda Yakin Akan Menghapus Data??')"></a> <br><br>
+                <a href="dah.php?n=<?php echo "".$hasil['nip'] ; ?>" class="btn-sm btn-danger fas fa-fas fa-trash-alt" onclick="javascript:return confirm('Anda Yakin Akan Menghapus Data??')"></a>
 
-                <a href="dae.php?n=<?php echo "".$hasil['nip'] ; ?>" class="btn-sm btn-warning fas fa-edit"> </a>
+                <a href="dae.php?n=<?php echo "".$hasil['nip'] ; ?>" class="btn-sm btn-warning fas fa-edit mt-2"> </a>
               </th>
            </tr>   
 	      <?php } ?> 

@@ -5,8 +5,8 @@ include '../link.php';?>
 <div class="container-fluid">
 <div class="card">
   <div class="card-header text-center bg-primary text-white">Riwayat Pangkat / Golongan Pegawai</div>
-  <div class="card-body">
-  <table id="example1" class="table table-bordered table-hover table-light bg-active">  
+  <div class="card-body table-responsive">
+  <table id="example1" class="table table-bordered table-hover bg-active">  
         <thead>  
             <tr class="bg-primary text-center"> 
                <th width="10px" style="vertical-align: middle"> No </th>	
@@ -38,7 +38,7 @@ echo "<tr>
               } 
               echo " </td>";
         echo"	
-        <td><a href='rpd.php?n=".$hasil['nip']."' class='btn-sm btn-primary glyphicon glyphicon-cek'> Lihat </a></td>
+        <td><a href='rpd.php?n=".$hasil['nip']."' class='btn-sm btn-primary fas fa-eye'></a></td>
           </tr> 
         ";  
    } 

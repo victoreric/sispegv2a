@@ -23,7 +23,7 @@ if(!isset($_SESSION['nama'])){
   $filesk=$_GET['f'];
   ?>
 
-  <div class="embed-responsive embed-responsive-16by9">
+  <div class="embed-responsive embed-responsive-1by1">
       <iframe class='embed-responsive-item' src="../assets/skpangkat/<?php echo $filesk; ?>"></iframe>
   </div>
 </div>

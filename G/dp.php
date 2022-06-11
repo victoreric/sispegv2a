@@ -173,7 +173,7 @@
                  </table>
             </div>
                 
-            <div class="tab-pane container fade" id="pangkat">
+            <div class="tab-pane container fade table-responsive" id="pangkat">
             <table id="" class="table table-striped table-bordered table-hover">  
                 <thead class="text-white">  
                     <tr class="bg-primary text-center"> 
