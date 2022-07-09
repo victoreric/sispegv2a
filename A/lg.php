@@ -7,7 +7,36 @@
       <div class="card shadow mb-4">
   <div class="card-header py-3">
     <h6 class="m-0 font-weight-bold text-primary">Rekapitulasi Pegawai Aktif Berdasarkan Pangkat/ Golongan</h6>
-      </div>
+   </div>
+
+<?php
+	//--delete all record in lapgol
+	$del="TRUNCATE TABLE lapgol";
+	$sql_del=mysqli_query($conn,$del);
+
+	//--query for view nip
+	$query="SELECT distinct nip from drpangkat	 ";
+	$sql=mysqli_query($conn,$query);
+	while($hasil=mysqli_fetch_array($sql)){
+		$nip=$hasil['nip'];
+	
+	// query for view pangkat
+	$query2="SELECT *, dtawal.nip, dtawal.statuspegawai
+				FROM drpangkat 
+				JOIN dtawal ON dtawal.nip=drpangkat.nip
+				WHERE drpangkat.nip=$nip AND dtawal.statuspegawai='1'
+				ORDER BY drpangkat.tanggalsk DESC LIMIT 1";
+	$sql2=mysqli_query($conn,$query2);
+	while($hasil2=mysqli_fetch_array($sql2)){
+		$gol=$hasil2['golongan'];
+		// echo $gol;
+	
+		// insert new record in lapgol
+		$query3="INSERT INTO lapgol (nip,gol_akhir) VALUES ('$nip','$gol')";
+		$sql3=mysqli_query($conn,$query3);
+		}}
+?>
+
    <div class="card-body">
     <div class="table-responsive">
     <table class="table table-bordered table-hover text-center" id="dataTable1" width="100%" cellspacing="0">
@@ -24,6 +53,7 @@ $totaljum=0;
 $totalpria=0;
 $totalperem=0;
 
+//display pangkat/golongan
 $query="SELECT * From mst_golongan";
 $sql=mysqli_Query($conn,$query);
 while ($hasil=mysqli_fetch_array($sql))

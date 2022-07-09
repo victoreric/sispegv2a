@@ -3,6 +3,12 @@
   include '../link.php';
 ?>
 
+<div class="alert alert-warning alert-dismissible">
+  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  <strong>Tips!</strong>
+  <span>Klik di Foto untuk melihat data pribadi pegawai.</span>
+</div>
+
 <div class="container-fluid">
 <div class="card">
   <div class="card-header text-center bg-primary text-white">Pengolahan Data Pegawai</div>

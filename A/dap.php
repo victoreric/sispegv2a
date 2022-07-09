@@ -3,11 +3,11 @@
   include '../link.php';
 ?>
 
-<div class="alert alert-warning alert-dismissible">
+<!-- <div class="alert alert-warning alert-dismissible">
   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
   <strong>Peringatan!</strong>
   Jika ada kesalahan data, segera hubungi sub bagian kepegawaian dan keuangan Fakultas Teknik, untuk dilakukan proses perbaikan.
-</div>
+</div> -->
 
 <?php 
      $nip=$_GET['n'];
@@ -36,6 +36,7 @@
     <div class="col-md-3 mb-2">
             <?php 
             echo " <img src='../assets/images/".$hasil['foto']."'  width='240' height='300'  > " ?>
+    
     </div>
 
         <div class="col-md-9">
@@ -244,7 +245,9 @@
             </div>
         </div>
   </div>
-
+  <div class="text-center">
+    <a href="dae.php?n=<?php echo "".$hasil['nip'] ; ?>" class="btn btn-md btn-warning fas fa-edit text-dark mt-2"> Ubah Data </a>
+  </div>
 </div>
 
 </div>
