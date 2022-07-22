@@ -7,7 +7,7 @@ include '../link.php';
       <div class="card-header bg-primary text-white text-center h5"> Master Jabatan Fungsional
       </div>
       <div class="card-body">	
-         <a href="mjft.php" class="btn-sm btn-info fa fa-plus-circle" role="button"> Tambah data  </a>
+         <a href="mjft" class="btn-sm btn-info fa fa-plus-circle" role="button"> Tambah data  </a>
          <p>
                <table class="table table-bordered table-hover bg-light table-striped">  
                   <thead>  
@@ -27,9 +27,9 @@ include '../link.php';
             echo "<tr>
                      <th>$no   </th> 
                      <th>" .$hasil['nama_jabatanf']." </th>"; ?>
-                     <th class='text-center' > <a href='mjfe.php?id= <?php echo "" .$hasil['id_mst_jabatanf'] ;?>'class='btn-sm btn-warning btn-warning fas fa-edit'> </a> 
+                     <th class='text-center' > <a href='mjfe?id= <?php echo "" .$hasil['id_mst_jabatanf'] ;?>'class='btn-sm btn-warning btn-warning fas fa-edit'> </a> 
             
-                        <a href="mjfh.php?id= <?php  echo"" .$hasil['id_mst_jabatanf'] ;?>" class="btn-sm btn-danger fas fa-trash-alt mt-1" onclick="javascript:return confirm('Anda yakin menghapus data ini..!')" >  </a> 
+                        <a href="mjfh?id= <?php  echo"" .$hasil['id_mst_jabatanf'] ;?>" class="btn-sm btn-danger fas fa-trash-alt mt-1" onclick="javascript:return confirm('Anda yakin menghapus data ini..!')" >  </a> 
                   
                   </th>
                   </tr>

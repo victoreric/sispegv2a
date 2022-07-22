@@ -1,12 +1,12 @@
 <?php
 session_start();
 if(!isset($_SESSION['nama'])){
-   echo "<script> alert('Anda Belum Login'); window.location='../index.php'; </script>";
+   echo "<script> alert('Anda Belum Login'); window.location='../index'; </script>";
 } 
 
 $level=$_SESSION['level'];
 if($level!='1'){
-   echo "<script> alert('Anda Tidak punya akses ke Halaman admin.'); window.location='../index.php'; </script>";
+   echo "<script> alert('Anda Tidak punya akses ke Halaman admin.'); window.location='../index'; </script>";
    exit;
 }
 
@@ -39,11 +39,11 @@ $query2 = "DELETE FROM dtawal WHERE nip='$nip'";
 $sql2 = mysqli_query($conn, $query2); 
 
 if($sql2){ 
-    echo "<script> alert('Data Pegawai berhasil dihapus.'); window.location='da.php';  </script>";
+    echo "<script> alert('Data Pegawai berhasil dihapus.'); window.location='da';  </script>";
 }
 else{
     echo "Maaf, Terjadi kesalahan saat mencoba untuk menyimpan data ke database.";
-    echo "<br><a href='da.php'>Kembali Ke Form</a>";
+    echo "<br><a href='da'>Kembali Ke Form</a>";
   }
 ?>
 

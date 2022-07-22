@@ -1,12 +1,12 @@
 <?php
 session_start();
 if(!isset($_SESSION['nama'])){
-   echo "<script> alert('Anda Belum Login'); window.location='index.php'; </script>";
+   echo "<script> alert('Anda Belum Login'); window.location='index'; </script>";
 } 
 
 $level=$_SESSION['level'];
 if($level!='1'){
-   echo "<script> alert('Anda Tidak punya akses ke Halaman admin.'); window.location='index.php'; </script>";
+   echo "<script> alert('Anda Tidak punya akses ke Halaman admin.'); window.location='index'; </script>";
    exit;
 }
 
@@ -25,11 +25,11 @@ $query2 = "DELETE FROM drpangkat WHERE id_drpangkat=$id";
 $sql2 = mysqli_query($conn, $query2); 
 
 if($sql2){ 
-    echo "<script> alert('Data pangkat berhasil dihapus..!'); window.location='rpd.php?n=$nip';  </script>";
+    echo "<script> alert('Data pangkat berhasil dihapus..!'); window.location='rpd?n=$nip';  </script>";
 }
 else{
     echo "Maaf, Terjadi kesalahan saat mencoba untuk menyimpan data ke database.";
-    echo "<br><a href='rp.php'>Kembali Ke Form</a>";
+    echo "<br><a href='rp'>Kembali Ke Form</a>";
   } 
 ?>
 

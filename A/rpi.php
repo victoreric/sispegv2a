@@ -15,7 +15,7 @@ $nipcari=$_GET['n'];
 
 	$nama=$hasil['nama'];
 ?>
-  <form action="rpis.php" method="POST" enctype="multipart/form-data">
+  <form action="rpis" method="POST" enctype="multipart/form-data">
 
   	<div class="form-group">
       <label for='nama'>Nama Lengkap:</label>
@@ -71,7 +71,7 @@ $nipcari=$_GET['n'];
         <td>  <input name="simpan"  class="btn btn-success btn-submit " type="submit" value="Simpan"> </td>
         <td> &nbsp &nbsp  </td>
 
-         <td> <a href="rpd.php?n=<?php echo "$nipcari"   ?>   "><input class="btn btn-success btn-danger" type="button" value="Batal"></a> </td>
+         <td> <a href="rpd?n=<?php echo "$nipcari"   ?>   "><input class="btn btn-success btn-danger" type="button" value="Batal"></a> </td>
     </table>
 </div>
   </form>

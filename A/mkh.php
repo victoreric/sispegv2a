@@ -7,11 +7,11 @@ $query="DELETE FROM mst_kualifikasi where id_mst_kualifikasi='$id_mst_kualifikas
 $sql=mysqli_query($conn,$query);
 
 if($sql){
-    echo "<script> alert('Data kualifikasi berhasil dihapus.'); window.location='mk.php';  </script>";
+    echo "<script> alert('Data kualifikasi berhasil dihapus.'); window.location='mk';  </script>";
 
 }else{
     echo "Maaf, Terjadi kesalahan saat mencoba untuk menyimpan data ke database.";
-    echo "<br><a href='mk.php'>Kembali Ke Form</a>";
+    echo "<br><a href='mk'>Kembali Ke Form</a>";
   }
 ?>
 

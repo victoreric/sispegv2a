@@ -46,7 +46,7 @@ include 'link.php';
 				<div class="col-sm-offset-2 col-sm-10">
 				<button type="submit" class="btn btn-success" name="daftar">Daftar</button>
 				
-				<a href="index.php" class="btn btn-danger" role="button">Batal</a>
+				<a href="index" class="btn btn-danger" role="button">Batal</a>
 				
 				</div>
 			</div>
@@ -78,7 +78,7 @@ while($result=mysqli_fetch_array($ceksql)){
 	$sql = mysqli_query($conn,$query);
 
 	if($sql){
-		echo "<script> alert('User baru berhasil ditambahkan.'); window.location='index.php'; </script>";
+		echo "<script> alert('User baru berhasil ditambahkan.'); window.location='index'; </script>";
 		}
 		else {
 			echo "gagal";

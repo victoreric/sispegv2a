@@ -27,7 +27,7 @@
         header('location:G');
     }
     else {
-        echo "<script> alert ('User dan Pasword belum diaktifkan. Hubungi administrator'); window.location='index.php'; </script>" ;
+        echo "<script> alert ('User dan Pasword belum diaktifkan. Hubungi administrator'); window.location='index'; </script>" ;
         }
     }
 include "link.php"; 
@@ -126,18 +126,18 @@ if(isset($_POST['login'])){
 		$_SESSION['active']=$hasil['active'];
 
 		if($_SESSION['level']=='1' && $_SESSION['active']=='Y'){
-			header('location:A/index.php');
+			header('location:A/index');
 		}
 		else if($_SESSION['level']=='2' && $_SESSION['active']=='Y'){
-			header('location:G/index.php');
+			header('location:G/index');
 		}
 		else {
 			session_destroy();
-			echo "<script> alert ('User dan Pasword belum diaktifkan..! Hubungi Sub Bagian Kepegawaian Fatek'); window.location='index.php'; </script>" ;
+			echo "<script> alert ('User dan Pasword belum diaktifkan..! Hubungi Sub Bagian Kepegawaian Fatek'); window.location='index'; </script>" ;
 		}
 	}
 	else{
- 		echo "<script> alert ('User dan Pasword tidak terdaftar. Hubungi Sub Bagian Kepegawaian Fatek.'); window.location='index.php'; </script>" ;
+ 		echo "<script> alert ('User dan Pasword tidak terdaftar. Hubungi Sub Bagian Kepegawaian Fatek.'); window.location='index'; </script>" ;
 	}
 }
 ?>

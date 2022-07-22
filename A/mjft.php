@@ -12,7 +12,7 @@ include '../link.php';
 			<input name="namajabf" type="text" class="form-control" placeholder="jabatan" required/>
 			<br>
 			<input name="simpan" class="btn btn-success btn-submit" type="submit" value="Simpan">
-			<a href="mjf.php" ><input class="btn btn-success btn-danger" type="button" value="Batal"></a>
+			<a href="mjf" ><input class="btn btn-success btn-danger" type="button" value="Batal"></a>
 		</form>
 		</div>
 </div>
@@ -26,12 +26,12 @@ if (isset($_POST['simpan']))
 		$sql= mysqli_query($conn,$query);
 
 		if($sql){ 
-		  echo "<script> alert ('Berhasil menambahkan Data Jabatan'); window.location='mjf.php'; </script>" ;
+		  echo "<script> alert ('Berhasil menambahkan Data Jabatan'); window.location='mjf'; </script>" ;
 		  }
 		  else{
 		    // Jika Gagal, Lakukan :
 		    echo "Maaf, Terjadi kesalahan saat mencoba untuk menyimpan data ke database.";
-		    echo "<br><a href='mjft.php'>Kembali Ke Form</a>";
+		    echo "<br><a href='mjft'>Kembali Ke Form</a>";
 		}
 }
 include '../footer.php';?>

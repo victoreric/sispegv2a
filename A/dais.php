@@ -51,19 +51,19 @@ if(move_uploaded_file($tmp, $path))
 
   	if($sql)
   	{ 
-   	  echo "<script> alert ('Berhasil menambahkan Data Pegawai'); window.location='dap.php?n=$nip'; </script>" ;
+   	  echo "<script> alert ('Berhasil menambahkan Data Pegawai'); window.location='dap?n=$nip'; </script>" ;
  	 }
   else
   {
     echo "Maaf, Terjadi kesalahan saat mencoba untuk menyimpan data ke database.";
-    echo "<br><a href='dai.php'>Kembali Ke Form</a>";
+    echo "<br><a href='dai'>Kembali Ke Form</a>";
   }
 }
 else
 {
   // Jika gambar gagal diupload, Lakukan :
   echo "Maaf, Gambar gagal untuk diupload.";
-  echo "<br><a href='dai.php'>Kembali Ke Form</a>";
+  echo "<br><a href='dai'>Kembali Ke Form</a>";
 }
 ?>
 

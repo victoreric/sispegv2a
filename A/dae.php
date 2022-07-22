@@ -333,7 +333,7 @@ $query = "SELECT * FROM dtawal WHERE nip= $nip ";
         <td>  <input name="ubah"  class="btn btn-success btn-submit" type="submit" value="Simpan Perubahan"> </td>
         <td> &nbsp &nbsp  </td>
 
-         <td> <a href="da.php"><input class="btn  btn-danger" type="button" value="Batal"></a> </td>
+         <td> <a href="da"><input class="btn  btn-danger" type="button" value="Batal"></a> </td>
 		</table>
 	</div>
 </div>
@@ -437,11 +437,11 @@ if (isset($_POST['ubah']))
 
 			if($sql)
 			{    
-	          echo "<script> alert ('Data Pegawai  berhasil diubah');window.location='dap.php?n=$nip';</script>"; 
+	          echo "<script> alert ('Data Pegawai  berhasil diubah');window.location='dap?n=$nip';</script>"; 
 	        }
 	      else {
 	            echo "Maaf, Terjadi kesalahan saat mencoba untuk menyimpan data ke database";
-	            echo "<br><a href='dae.php'>Kembali Ke Form</a>";
+	            echo "<br><a href='dae'>Kembali Ke Form</a>";
 	            }    
      	}
      }
@@ -480,7 +480,7 @@ else
 	$sql = mysqli_query($conn,$query);
 	 	if($sql)
 	  	{ 
-		echo "<script> alert ('Data Pegawai  berhasil diubah');window.location='dap.php?n=$nip';</script>"; 
+		echo "<script> alert ('Data Pegawai  berhasil diubah');window.location='dap?n=$nip';</script>"; 
 		}
 		else 
 		{

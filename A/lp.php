@@ -55,7 +55,7 @@ while ($hasil=mysqli_fetch_array($sql)){
         <tbody>
         <tr>
         <td>".$hasil['jenjang']. "</td>
-         <td><a href='lpd.php?p=".$id. "'> ".$jum. " </a> </td>
+         <td><a href='lpd?p=".$id. "'> ".$jum. " </a> </td>
          <td> ".$jumlaki."  </td>
          <td> ".$jumperem."  </td>
  </tr>";

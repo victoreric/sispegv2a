@@ -33,7 +33,7 @@
   <div class="card-header bg-primary text-white text-center">Data Pribadi</div>
   <div class="card-body">
   <div class="row">
-    <div class="col-md-3 mb-2">
+    <div class="col-md-3 sm-1 lg-3 mb-2">
             <?php 
             echo " <img src='../assets/images/".$hasil['foto']."'  width='240' height='300'  > " ?>
     
@@ -210,7 +210,7 @@
                     <td><?php echo $nilai['pejabat']   ?></td>
                     <td><?php echo $nilai['nomorsk']  ?></td>
                     <td><?php echo $tglsk  ?></td>
-                    <td><a href='rpsk.php?f=<?php echo $nilai['filesk'];?>' target='blank'> <?php echo $nilai['filesk'];?> </a></td>
+                    <td><a href='rpsk?f=<?php echo $nilai['filesk'];?>' target='blank'> <?php echo $nilai['filesk'];?> </a></td>
                     </tr>
                <?php } } ?> 
                 </table>
@@ -246,7 +246,7 @@
         </div>
   </div>
   <div class="text-center">
-    <a href="dae.php?n=<?php echo "".$hasil['nip'] ; ?>" class="btn btn-md btn-warning fas fa-edit text-dark mt-2"> Ubah Data </a>
+    <a href="dae?n=<?php echo "".$hasil['nip'] ; ?>" class="btn btn-md btn-warning fas fa-edit text-dark mt-2"> Ubah Data </a>
   </div>
 </div>
 

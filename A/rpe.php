@@ -93,7 +93,7 @@ $id=$_GET['id'];
         <td>  <input name="ubah"  class="btn btn-success btn-submit " type="submit" value="Simpan Perubahan"> </td>
         <td> &nbsp &nbsp  </td>
 
-         <td> <a href="rpd.php?n=<?php  echo $nip ?>"><input class="btn btn-success btn-danger" type="button" value="Batal"></a> </td>
+         <td> <a href="rpd?n=<?php  echo $nip ?>"><input class="btn btn-success btn-danger" type="button" value="Batal"></a> </td>
     </table>
 </div>
 </div>
@@ -126,12 +126,12 @@ if (isset($_POST['ubah']))
     $sql=mysqli_query($conn,$query); 
       if($sql)
       { 
-    echo "<script> alert ('Data Riwayat Pangkat berhasil diubah');window.location='rpd.php?n=$nip';</script>"; 
+    echo "<script> alert ('Data Riwayat Pangkat berhasil diubah');window.location='rpd?n=$nip';</script>"; 
     }
     else 
     {
       echo "Maaf, Terjadi kesalahan saat mencoba untuk menyimpan data ke database";
-              echo "<br><a href='rp.php'>Kembali Ke Form</a>";
+              echo "<br><a href='rp'>Kembali Ke Form</a>";
     }
   }
   //jika user mau ubah filesk, menceklis checkbox yang ada di form ubah, lakukan :
@@ -169,12 +169,12 @@ if (isset($_POST['ubah']))
               $sql=mysqli_query($conn,$query); 
                 if($sql)
                 { 
-              echo "<script> alert ('Data Riwayat Pangkat berhasil diubah');window.location='rpd.php?n=$nip';</script>"; 
+              echo "<script> alert ('Data Riwayat Pangkat berhasil diubah');window.location='rpd?n=$nip';</script>"; 
               }
               else 
               {
                 echo "Maaf, Terjadi kesalahan saat mencoba untuk menyimpan data ke database";
-                        echo "<br><a href='rpd.php?n=$nip'>Kembali Ke Form</a>";
+                        echo "<br><a href='rpd?n=$nip'>Kembali Ke Form</a>";
               }
           }
     }

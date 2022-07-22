@@ -8,7 +8,7 @@ include '../link.php';
 <div class="card mb-5">
   <div class="card-header bg-primary text-white text-center h5">Master Pangkat dan Golongan</div>
   <div class="card-body table-responsive">
-      <a href="mgt.php" class="btn-sm btn-info fa fa-plus-circle" role="button"> Tambah data  </a>
+      <a href="mgt" class="btn-sm btn-info fa fa-plus-circle" role="button"> Tambah data  </a>
       <p>
 
       <table id="" class="table table-bordered table-hover bg-light table-striped">  
@@ -32,9 +32,9 @@ include '../link.php';
                   <th>" .$hasil['nama_gol']." </th>
                   <th>".$hasil['pangkat']. "</th> "; ?>
 
-                  <th class='text-center' > <a href="mge.php?id_gol=<?php echo $hasil['id_mst_gol'] ;?>" class='btn-sm btn-warning fas fa-edit'> edit</a>
+                  <th class='text-center' > <a href="mge?id_gol=<?php echo $hasil['id_mst_gol'] ;?>" class='btn-sm btn-warning fas fa-edit'> edit</a>
          
-                     <a href="mgh.php?id=<?php echo $hasil['id_mst_gol'] ;?>" class="btn-sm btn-danger fas fa-trash-alt mt-2" onclick="javascript:return confirm('Anda Yakin untuk menghapus data ini?')" > hapus </a> 
+                     <a href="mgh?id=<?php echo $hasil['id_mst_gol'] ;?>" class="btn-sm btn-danger fas fa-trash-alt mt-2" onclick="javascript:return confirm('Anda Yakin untuk menghapus data ini?')" > hapus </a> 
                </th>
                </tr>
             <?php  }  ?>   

@@ -20,7 +20,7 @@ $hasil = mysqli_fetch_array($sql);
           <input name="subunit" type="text" class="form-control" placeholder="Sub Bagian" value="<?php echo $hasil['subunit']; ?> ">
           <br>
           <input class="btn btn-success btn-submit" type="submit" name="ubah" value="Ubah">
-          <a href="mu.php" ><input class="btn btn-success btn-danger" type="button" value="Batal"></a>
+          <a href="mu" ><input class="btn btn-success btn-danger" type="button" value="Batal"></a>
       </form>
     </div>
   </div>
@@ -40,7 +40,7 @@ if (isset($_POST['ubah']))
      $sql= mysqli_query($conn,$query);
 
     if($sql){ 
-              echo "<script> alert ('Data unit kerja berhasil diubah');window.location='mu.php';</script>"; 
+              echo "<script> alert ('Data unit kerja berhasil diubah');window.location='mu';</script>"; 
              }
       else {
             echo "gagal";

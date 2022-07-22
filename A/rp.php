@@ -38,7 +38,7 @@ echo "<tr>
               } 
               echo " </td>";
         echo"	
-        <td><a href='rpd.php?n=".$hasil['nip']."' class='btn-sm btn-primary fas fa-eye'></a></td>
+        <td><a href='rpd?n=".$hasil['nip']."' class='btn-sm btn-primary fas fa-eye'></a></td>
           </tr> 
         ";  
    } 

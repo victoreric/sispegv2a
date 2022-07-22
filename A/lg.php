@@ -91,7 +91,7 @@ $totalperem +=$hasil_perem;
         <tbody>
         <tr>
         <td>".$pangkat. " ; ".$nama_gol. "</td>
-        <td><a href='lgd.php?g=".$idgol."'>".$jum. "</td>
+        <td><a href='lgd?g=".$idgol."'>".$jum. "</td>
         <td>". $hasil_pria."</td>
         <td>". $hasil_perem." </td>
  </tr>";

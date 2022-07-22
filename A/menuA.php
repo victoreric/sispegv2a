@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(!isset($_SESSION['nama'])){
-   echo "<script> alert('Anda Belum Login'); window.location='../index.php'; </script>";
+   echo "<script> alert('Anda Belum Login'); window.location='../index'; </script>";
 } 
 
 $level=$_SESSION['level'];
@@ -54,7 +54,7 @@ if($level=='1'){
             <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
                 <!-- Sidebar - Brand -->
-                <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.php">
+                <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index">
                     <div class="sidebar-brand-icon">
                         <!-- <i class="fas fa-laugh-wink"></i> -->
                         <img src="../assets/img/unpattilogo.png" width="50px" alt="">
@@ -67,7 +67,7 @@ if($level=='1'){
 
                 <!-- Nav Item - Dashboard -->
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.php">
+                    <a class="nav-link" href="index">
                         <i class="fas fa-fw fa-tachometer-alt"></i>
                         <span>Dashboard</span></a>
                 </li>
@@ -89,12 +89,12 @@ if($level=='1'){
                     <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
                         <div class="bg-white py-2 collapse-inner rounded">
                             <h6 class="collapse-header">Statistik A berdasarkan:</h6>
-                            <a class="collapse-item" href="lk.php"> Kualifikasi</a>
-                            <a class="collapse-item" href="lg.php">Pangkat/ Golongan</a>
-                            <a class="collapse-item" href="ljf.php">Jabatan Fungsional</a>
-                            <a class="collapse-item" href="lu.php">Unit Kerja</a>
-                            <a class="collapse-item" href="lp.php">Pendidikan</a>
-                            <a class="collapse-item" href="ls.php">Status Pegawai</a>
+                            <a class="collapse-item" href="lk"> Kualifikasi</a>
+                            <a class="collapse-item" href="lg">Pangkat/ Golongan</a>
+                            <a class="collapse-item" href="ljf">Jabatan Fungsional</a>
+                            <a class="collapse-item" href="lu">Unit Kerja</a>
+                            <a class="collapse-item" href="lp">Pendidikan</a>
+                            <a class="collapse-item" href="ls">Status Pegawai</a>
                         </div>
                     </div>
                 </li>
@@ -116,8 +116,8 @@ if($level=='1'){
                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                         <div class="bg-white py-2 collapse-inner rounded">
                             <!-- <h6 class="collapse-header">Statistik berdasarkan:</h6> -->
-                            <a class="collapse-item" href="da.php"> Data Awal</a>
-                            <a class="collapse-item" href="rp.php">Pangkat/ Golongan</a>
+                            <a class="collapse-item" href="da"> Data Awal</a>
+                            <a class="collapse-item" href="rp">Pangkat/ Golongan</a>
                             <!-- <a class="collapse-item" href="lapjabfNew.php">Jabatan Fungsional</a>
                             <a class="collapse-item" href="lapunitNew.php">Unit Kerja</a>
                             <a class="collapse-item" href="lappenNew.php">Pendidikan</a>
@@ -143,12 +143,12 @@ if($level=='1'){
                     <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSidebar">
                         <div class="bg-white py-2 collapse-inner rounded">
                             <!-- <h6 class="collapse-header">Master data:</h6> -->
-                            <a class="collapse-item" href="mg.php">Pangkat/ Golongan</a>
-                            <a class="collapse-item" href="mjf.php">Jabatan Fungsional</a>
-                            <a class="collapse-item" href="mp.php">Pendidikan</a>
-                            <a class="collapse-item" href="mk.php">Kualifikasi</a>
-                            <a class="collapse-item" href="mu.php">Unit Kerja</a>
-                            <a class="collapse-item" href="um.php">User Management</a>
+                            <a class="collapse-item" href="mg">Pangkat/ Golongan</a>
+                            <a class="collapse-item" href="mjf">Jabatan Fungsional</a>
+                            <a class="collapse-item" href="mp">Pendidikan</a>
+                            <a class="collapse-item" href="mk">Kualifikasi</a>
+                            <a class="collapse-item" href="mu">Unit Kerja</a>
+                            <a class="collapse-item" href="um">User Management</a>
                         </div>
                     </div>
                 </li>
@@ -239,7 +239,7 @@ if($level=='1'){
 
     <?php } 
     else {
-        echo "<script> alert('Anda Tidak punya akses ke Halaman ini.'); window.location='../index.php'; </script>";
+        echo "<script> alert('Anda Tidak punya akses ke Halaman ini.'); window.location='../index'; </script>";
         exit;
     }
     ?>

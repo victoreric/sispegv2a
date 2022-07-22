@@ -6,7 +6,7 @@ include '../link.php';
  <div class="card mb-5">
    <div class="card-header bg-primary text-white text-center h5">Master Kualifikasi  </div>
   <div class="card-body">
-      <a href="mkt.php" class="btn-sm btn-info fa fa-plus-circle" role="button"> Tambah data  </a>
+      <a href="mkt" class="btn-sm btn-info fa fa-plus-circle" role="button"> Tambah data  </a>
       <p>
          <table id="" class="table table-bordered table-hover bg-light table-striped ">  
             <thead>  
@@ -25,9 +25,9 @@ include '../link.php';
          echo "<tr>
                   <th>$no   </th> 
                   <th>".$hasil['kualifikasi']. "</th> "; ?>
-                  <th class='text-center' > <a href='mke.php?id= <?php echo $hasil['id_mst_kualifikasi'] ;?>'class='btn-sm btn-warning fas fa-edit' > edit</a>
+                  <th class='text-center' > <a href='mke?id= <?php echo $hasil['id_mst_kualifikasi'] ;?>'class='btn-sm btn-warning fas fa-edit' > edit</a>
          
-                     <a href="mkh.php?id= <?php  echo $hasil['id_mst_kualifikasi'] ;?>" class="btn-sm btn-danger fas fa-trash-alt mt-2" onclick="javascript:return confirm('Anda yakin menghapus data ini..!')" > hapus </a> 
+                     <a href="mkh?id= <?php  echo $hasil['id_mst_kualifikasi'] ;?>" class="btn-sm btn-danger fas fa-trash-alt mt-2" onclick="javascript:return confirm('Anda yakin menghapus data ini..!')" > hapus </a> 
                </th>
                </tr>
             <?php  } ?>   

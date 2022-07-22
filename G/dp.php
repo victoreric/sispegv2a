@@ -210,7 +210,7 @@
                     $tglsk = tanggal_indo($tanggalsk);
                     ?>
                     <td><?php echo $tglsk  ?></td>
-                    <td><a href='../A/rpsk.php?f=<?php echo $nilai['filesk'];?>' target='_blank'> <?php echo $nilai['filesk'];?> </a></td>
+                    <td><a href='../A/rpsk?f=<?php echo $nilai['filesk'];?>' target='_blank'> <?php echo $nilai['filesk'];?> </a></td>
                     </tr>
                <?php } } ?> 
                 </table>

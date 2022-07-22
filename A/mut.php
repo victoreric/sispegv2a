@@ -16,7 +16,7 @@ include '../link.php';
 				<br>
 				
 				<input name="simpan" class="btn btn-success btn-submit" type="submit" value="Simpan">
-				<a href="mu.php" ><input class="btn btn-success btn-danger" type="button" value="Batal"></a>
+				<a href="mu" ><input class="btn btn-success btn-danger" type="button" value="Batal"></a>
 			</form>
 		</div>
 	
@@ -35,13 +35,13 @@ if (isset($_POST['simpan']))
 
 		if($sql){ // Cek jika proses simpan ke database sukses atau tidak
 		    // Jika Sukses, Lakukan : 
-		  echo "<script> alert ('Berhasil menambahkan unit kerja'); window.location='mu.php'; </script>" ;
+		  echo "<script> alert ('Berhasil menambahkan unit kerja'); window.location='mu'; </script>" ;
 
 		  }
 		  else{
 		    // Jika Gagal, Lakukan :
 		    echo "Maaf, Terjadi kesalahan saat mencoba untuk menyimpan data ke database.";
-		    echo "<br><a href='mut.php'>Kembali Ke Form</a>";
+		    echo "<br><a href='mut'>Kembali Ke Form</a>";
 		}
 }
 include '../footer.php'; ?>

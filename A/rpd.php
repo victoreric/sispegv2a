@@ -36,7 +36,7 @@ include '../link.php';
           <td>$no </td>
           <td colspan='6'>".$hasil['gelardepan']."  ".$hasil['nama']. ", ".$hasil['gelarbelakang']." <br> NIP. ".$hasil['nip']."   </td>
          
-          <td><a href='rpi.php?n=".$hasil['nip']."' class='btn-sm btn-info fa fa-plus-circle' role='button'>  </a></td>
+          <td><a href='rpi?n=".$hasil['nip']."' class='btn-sm btn-info fa fa-plus-circle' role='button'>  </a></td>
           </tr>
         ";
  
@@ -62,10 +62,10 @@ include '../link.php';
            <td>".$nilai['pejabat']." </td>
            <td>".$nilai['nomorsk']." </td>
            <td>".$tanggal_sk." </td>
-           <td><a href='rpsk.php?f=".$nilai['filesk'] ."' target='blank'> " .$nilai['filesk']."</a></td>
-           <td><a href='rpe.php?id=$id' class='btn-sm btn-warning fas fa-edit'> </a>"; ?>
+           <td><a href='rpsk?f=".$nilai['filesk'] ."' target='blank'> " .$nilai['filesk']."</a></td>
+           <td><a href='rpe?id=$id' class='btn-sm btn-warning fas fa-edit'> </a>"; ?>
 
-          <a href="rph.php?id=<?php echo $id ;?>" class="btn-sm btn-danger fas fa-trash-alt mt-2" onclick="javascript:return confirm('Anda Yakin Akan Menghapus Data??')"> </a> 
+          <a href="rph?id=<?php echo $id ;?>" class="btn-sm btn-danger fas fa-trash-alt mt-2" onclick="javascript:return confirm('Anda Yakin Akan Menghapus Data??')"> </a> 
         <?php 
         echo "
         </td>

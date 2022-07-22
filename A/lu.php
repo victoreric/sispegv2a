@@ -57,7 +57,7 @@ echo "
         <tbody>
         <tr>
         <td>".$hasil['subunit']. "</td>
-         <td><a href='lud.php?u=".$id."'> ".$jum. "</td>
+         <td><a href='lud?u=".$id."'> ".$jum. "</td>
          <td> ".$jumlaki."  </td>
          <td> ".$jumperem."  </td>
  </tr>";

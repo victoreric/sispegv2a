@@ -24,7 +24,7 @@ $hasil = mysqli_fetch_array($sql);
          <br>
          
          <input class="btn btn-success btn-submit" type="submit" name="ubah" value="Ubah">
-         <a href="mg.php" ><input class="btn btn-success btn-danger" type="button" value="Batal"></a>
+         <a href="mg" ><input class="btn btn-success btn-danger" type="button" value="Batal"></a>
       </form>
    </div>
 </div>
@@ -45,7 +45,7 @@ if (isset($_POST['ubah']))
 
     if($sql){ // Cek jika proses simpan ke database sukses atau tidak
                 // Jika Sukses, Lakukan :   
-              echo "<script> alert ('Data Golongan berhasil diubah');window.location='mg.php';</script>"; 
+              echo "<script> alert ('Data Golongan berhasil diubah');window.location='mg';</script>"; 
              }
       else {
             echo "gagal";

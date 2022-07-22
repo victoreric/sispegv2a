@@ -6,7 +6,7 @@
 <div class="card mb-5">
   <div class="card-header text-center bg-primary text-white">Input data Pegawai</div>
   <div class="card-body" style="color:black">
-<form method="POST" action="dais.php" enctype="multipart/form-data"> 	
+<form method="POST" action="dais" enctype="multipart/form-data"> 	
   <div class="form-row">
     <div class="form-group col-md-4">
       <label for='nip' >NIP</label>
@@ -225,7 +225,7 @@
   <div class="col"><button type="submit" name="simpan" class="btn btn-outline-success">Simpan</button></div>
 
   <div class="col">
-  <a href="da.php" type="button" class="btn btn-outline-danger" role="button">Batal</a>
+  <a href="da" type="button" class="btn btn-outline-danger" role="button">Batal</a>
   </div>
   <div class="col"></div>
 </div>  

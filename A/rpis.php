@@ -18,7 +18,7 @@ $path = "../assets/skpangkat/".$filesk_new;
 
 // check file already exists
        if (file_exists($path)) {
-           echo die ("<script> alert('Sorry, file already exists. Please change your file name.');window.location='rpi.php?n=$nip'</script> ");
+           echo die ("<script> alert('Sorry, file already exists. Please change your file name.');window.location='rpi?n=$nip'</script> ");
        }
 if(move_uploaded_file($tmp, $path)) 
 {	
@@ -27,12 +27,12 @@ if(move_uploaded_file($tmp, $path))
 
   	if($sql)
   	{ 
-   	  echo "<script> alert ('Berhasil menambahkan Riwayat Pangkat & Golongan Pegawai'); window.location='rpd.php?n=$nip'; </script>" ;
+   	  echo "<script> alert ('Berhasil menambahkan Riwayat Pangkat & Golongan Pegawai'); window.location='rpd?n=$nip'; </script>" ;
  	 }
   else
   {
     echo "Maaf, Terjadi Kesalahan..! Mohon perhatikan nama file, dan type file. Sesuaikan dengan aturan yang ditentukan";
-    echo "<br><a href='rpd.php?n=$nip'>Kembali Ke Form</a>";
+    echo "<br><a href='rpd?n=$nip'>Kembali Ke Form</a>";
   }
   
 }
@@ -40,7 +40,7 @@ else
 {
   // Jika gambar gagal diupload, Lakukan :
   echo "Maaf, File gagal untuk diupload...";
-  echo "<br><a href='rpd.php?n=$nip'>Kembali Ke Form</a>";
+  echo "<br><a href='rpd?n=$nip'>Kembali Ke Form</a>";
 }
 
 ?>

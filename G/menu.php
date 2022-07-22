@@ -48,7 +48,7 @@ if($level=='2'){
             <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
                 <!-- Sidebar - Brand -->
-                <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.php">
+                <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index">
                     <div class="sidebar-brand-icon">
                         <!-- <i class="fas fa-laugh-wink"></i> -->
                         <img src="../assets/img/unpattilogo.png" width="50px" alt="">
@@ -61,7 +61,7 @@ if($level=='2'){
 
                 <!-- Nav Item - Dashboard -->
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.php">
+                    <a class="nav-link" href="index">
                         <i class="fas fa-fw fa-tachometer-alt"></i>
                         <span>Dashboard</span></a>
                 </li>
@@ -86,12 +86,12 @@ if($level=='2'){
                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                         <div class="bg-white py-2 collapse-inner rounded">
                             <h6 class="collapse-header">Statistik berdasarkan:</h6>
-                            <a class="collapse-item" href="lk.php"> Kualifikasi</a>
-                            <a class="collapse-item" href="lg.php">Pangkat/ Golongan</a>
-                            <a class="collapse-item" href="ljf.php">Jabatan Fungsional</a>
-                            <a class="collapse-item" href="lu.php">Unit Kerja</a>
-                            <a class="collapse-item" href="lp.php">Pendidikan</a>
-                            <a class="collapse-item" href="ls.php">Status Pegawai</a>
+                            <a class="collapse-item" href="lk"> Kualifikasi</a>
+                            <a class="collapse-item" href="lg">Pangkat/ Golongan</a>
+                            <a class="collapse-item" href="ljf">Jabatan Fungsional</a>
+                            <a class="collapse-item" href="lu">Unit Kerja</a>
+                            <a class="collapse-item" href="lp">Pendidikan</a>
+                            <a class="collapse-item" href="ls">Status Pegawai</a>
                         </div>
                     </div>
                 </li>
@@ -106,7 +106,7 @@ if($level=='2'){
 
                 <!-- Nav Item - pribadi Collapse Menu -->
                 <li class="nav-item">
-                    <a class="nav-link collapsed" href="dp.php" 
+                    <a class="nav-link collapsed" href="dp" 
                         aria-expanded="true" aria-controls="collapseUtilities">
                         <i class="fas fa-fw fa-folder"></i>
                         <span>Data Pribadi</span>
@@ -167,7 +167,7 @@ if($level=='2'){
                                         <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                                         Profile
                                     </a> -->
-                                    <a class="dropdown-item" href="cp.php">
+                                    <a class="dropdown-item" href="cp">
                                         <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
                                         Ganti Password
                                     </a>

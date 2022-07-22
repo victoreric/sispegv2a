@@ -56,7 +56,7 @@ while ($hasil=mysqli_fetch_array($sql))
         <tbody>
         <tr>
  	<td>".$hasil['kualifikasi']. "</td>
- 	 <td><a href='lkd.php?k=".$id. "'>".$jum. " </a></td>
+ 	 <td><a href='lkd?k=".$id. "'>".$jum. " </a></td>
  	<td> ".$jumlaki."  </td>
  	<td> ".$jumperem."  </td>
  </tr>";

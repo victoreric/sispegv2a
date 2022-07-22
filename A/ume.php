@@ -44,7 +44,7 @@ $hasil=mysqli_fetch_array($sql);
          <br>
          <div class='text-center'>
          <input class="btn btn-success btn-submit" type="submit" name="ubah" value="Ubah">
-         <a href="um.php" ><input class="btn btn-success btn-danger" type="button" value="Batal"></a>
+         <a href="um" ><input class="btn btn-success btn-danger" type="button" value="Batal"></a>
          </div>
       </form>
   </div>
@@ -78,7 +78,7 @@ if (isset($_POST['ubah']))
 
       if($sql2){ // Cek jika proses simpan ke database sukses atau tidak
          // Jika Sukses, Lakukan :   
-       echo "<script> alert ('User Account dan password berhasil diubah');window.location='um.php';</script>"; 
+       echo "<script> alert ('User Account dan password berhasil diubah');window.location='um';</script>"; 
       }
 else {
      echo "gagal";
@@ -88,7 +88,7 @@ else {
    
     if($sql){ // Cek jika proses simpan ke database sukses atau tidak
                 // Jika Sukses, Lakukan :   
-              echo "<script> alert ('User Account berhasil diubah');window.location='um.php';</script>"; 
+              echo "<script> alert ('User Account berhasil diubah');window.location='um';</script>"; 
              }
       else {
             echo "gagal";

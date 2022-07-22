@@ -55,7 +55,7 @@ while ($hasil=mysqli_fetch_array($sql))
         <tbody>
         <tr>
         <td>".$hasil['status']. "</td>
-         <td><a href='lsd.php?s=".$id."'>".$jum. "</td>
+         <td><a href='lsd?s=".$id."'>".$jum. "</td>
          <td> ".$jumlaki."  </td>
          <td> ".$jumperem."  </td>
  </tr>";

@@ -25,7 +25,7 @@
             </div>
 
             <button type="submit" class="btn btn-success" name='ganti'>Simpan</button>
-            <a href="index.php" class="btn btn-danger" role="button">Batal</a>
+            <a href="index" class="btn btn-danger" role="button">Batal</a>
             </form>
         </div>
     </div>
@@ -46,7 +46,7 @@ $pass=md5($_POST['pass']);
 	$sql = mysqli_query($conn,$query);
 
 	if($sql){
-		echo "<script> alert('Berhasil Ganti Password .'); window.location='index.php'; </script>";
+		echo "<script> alert('Berhasil Ganti Password .'); window.location='index'; </script>";
 		}
 		else {
 			echo "gagal";

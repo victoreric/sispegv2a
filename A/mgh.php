@@ -10,13 +10,13 @@ $sql=mysqli_query($conn,$query);
 
 if($sql){ // Cek jika proses simpan ke database sukses atau tidak
     // Jika Sukses, Lakukan : 
-    echo "<script> alert('Data Golongan berhasil dihapus.'); window.location='mg.php';  </script>";
+    echo "<script> alert('Data Golongan berhasil dihapus.'); window.location='mg';  </script>";
 
 }else{
      
     // Jika Gagal, Lakukan :
     echo "Maaf, Terjadi kesalahan saat mencoba untuk menyimpan data ke database.";
-    echo "<br><a href='mg.php'>Kembali Ke Form</a>";
+    echo "<br><a href='mg'>Kembali Ke Form</a>";
   }
 ?>
 

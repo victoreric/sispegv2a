@@ -11,7 +11,7 @@ include '../link.php';
 		<input name="jenjang" type="text" class="form-control" placeholder="jenjang" required/>
 		<br>
 		<input name="simpan" class="btn btn-success btn-submit" type="submit" value="Simpan">
-		<a href="mp.php" ><input class="btn btn-success btn-danger" type="button" value="Batal"></a>
+		<a href="mp" ><input class="btn btn-success btn-danger" type="button" value="Batal"></a>
 	</form>
 	</div>
 </div>
@@ -23,12 +23,12 @@ if (isset($_POST['simpan']))
 		$query = "INSERT INTO mst_pendidikan (jenjang) VALUE ('$jenjang')";
 		$sql= mysqli_query($conn,$query);
 		if($sql){
-		  echo "<script> alert ('Berhasil menambahkan Data Pendidikan'); window.location='mp.php'; </script>" ;
+		  echo "<script> alert ('Berhasil menambahkan Data Pendidikan'); window.location='mp'; </script>" ;
 		  }
 		  else{    
 		    // Jika Gagal, Lakukan :
 		    echo "Maaf, Terjadi kesalahan saat mencoba untuk menyimpan data ke database.";
-		    echo "<br><a href='mpt.php'>Kembali Ke Form</a>";
+		    echo "<br><a href='mpt'>Kembali Ke Form</a>";
 		}
 }
 include '../footer.php';?>
