@@ -85,6 +85,8 @@ echo "
      chart: {
      renderTo: 'mygraph',
      type: 'column'
+   //   type: 'line'
+   //   type: 'bar'
      },   
      title: {
      text: 'Statistik  Pegawai Berdasarkan Kualifikasi'

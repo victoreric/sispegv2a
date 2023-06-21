@@ -48,7 +48,7 @@ include "link.php";
     <div class="col-lg-6">
         <div class="p-2">
             <div class="text-center">
-                <img src="assets/img/unp2.png" alt="logo" class="logo">
+                <img src="assets/img/unpattilogo.png" width="200" height="200" alt="logo" class="logo">
                  <h1 class="h4 text-gray-900 mb-4">Sistem Informasi Kepegawaian</h1>
             </div>
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
@@ -109,10 +109,10 @@ include "link.php";
 <!-- loginProses -->
 <?php 
 if(isset($_POST['login'])){
-	$user=$_POST['user'];
-	$pass=md5($_POST['pass']);
-	//echo "".$user."<br>";
-	//echo "".$pass."<br>";
+	$user=mysqli_real_escape_string($conn, $_POST['user']);
+	$pass=mysqli_real_escape_string($conn, md5($_POST['pass']));
+	// echo "".$user."<br>";
+	// echo "".$pass."<br>";
 
 	$query="SELECT * FROM login WHERE user='$user' AND pass='$pass'";
 	$sql=mysqli_query($conn,$query);

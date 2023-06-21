@@ -8,6 +8,7 @@ include '../link.php';?>
   <div class="card-body" style="color:black">
 <?php 
 $nipcari=$_GET['n'];
+// echo $nipcari;
 
 	$query="SELECT nama, gelardepan, gelarbelakang FROM dtawal WHERE nip=$nipcari";
 	$sql=mysqli_query($conn,$query);

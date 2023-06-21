@@ -130,7 +130,11 @@
                     <th>Kode Pos</th>
                     <td><?php echo $hasil['kodepos'] ?></td>
                 </tr>
+               
             </table>
+            <div class="text-center">
+                <a href="dae?n=<?php echo "".$hasil['nip'] ; ?>" class="btn btn-md btn-warning fas fa-edit text-dark mt-2"> Ubah Data ini</a>
+            </div>
             </div>
 
             <div class="tab-pane container fade" id="pendidikan">
@@ -156,6 +160,9 @@
                     <td><?php echo $thnlulus ?></td>
                 </tr>
                 </table>
+                <div class="text-center">
+                <a href="dae?n=<?php echo "".$hasil['nip'] ; ?>" class="btn btn-md btn-warning fas fa-edit text-dark mt-2"> Ubah Data ini</a>
+            </div>
             </div>
                 
             <div class="tab-pane container fade" id="kepegawaian">
@@ -172,7 +179,10 @@
                     <th>Karpeg</th>
                     <td><?php echo $hasil['karpeg'] ?></td>
                 </tr>
-                 </table>
+                </table>
+                <div class="text-center">
+                <a href="dae?n=<?php echo "".$hasil['nip'] ; ?>" class="btn btn-md btn-warning fas fa-edit text-dark mt-2"> Ubah Data ini</a>
+            </div>
             </div>
                 
             <div class="tab-pane container fade" id="pangkat">
@@ -212,7 +222,17 @@
                     <td><?php echo $tglsk  ?></td>
                     <td><a href='rpsk?f=<?php echo $nilai['filesk'];?>' target='blank'> <?php echo $nilai['filesk'];?> </a></td>
                     </tr>
-               <?php } } ?> 
+                   
+               <?php }
+               echo "<a href='rpd?n=".$hasil['nip']."' class='btn-sm btn-info fa fa-plus-circle' role='button'> Lihat riwayat pangkat </a>";
+                } 
+               
+               
+               else { 
+                echo "<a href='rpi?n=".$hasil['nip']."' class='btn-sm btn-info fa fa-plus-circle' role='button'> Klik disini untuk menambah data pangkat </a>";
+               }
+               ?> 
+               
                 </table>
             </div>
             
@@ -231,6 +251,9 @@
                     <td><?php echo $tmtjf ?></td>
                 </tr>
                 </table>
+                <div class="text-center">
+                <a href="dae?n=<?php echo "".$hasil['nip'] ; ?>" class="btn btn-md btn-warning fas fa-edit text-dark mt-2"> Ubah Data ini</a>
+            </div>
             </div>
 
             <div class="tab-pane container fade" id="unit">
@@ -240,14 +263,17 @@
                     <td><?php echo $hasil['subunit'] ?></td>
                 </tr>
                 </table>
+                <div class="text-center">
+                <a href="dae?n=<?php echo "".$hasil['nip'] ; ?>" class="btn btn-md btn-warning fas fa-edit text-dark mt-2"> Ubah Data ini</a>
+            </div>
             </div>
           
             </div>
         </div>
   </div>
-  <div class="text-center">
+  <!-- <div class="text-center">
     <a href="dae?n=<?php echo "".$hasil['nip'] ; ?>" class="btn btn-md btn-warning fas fa-edit text-dark mt-2"> Ubah Data </a>
-  </div>
+  </div> -->
 </div>
 
 </div>
