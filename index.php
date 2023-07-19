@@ -19,11 +19,11 @@
 <!-- login Form -->
 <?php 
     session_start();
-    if(isset($_SESSION['nama'])){
-    if($_SESSION['level']=='1' && $_SESSION['active']=='Y'){
+    if(isset($_SESSION['nama_sispeg'])){
+    if($_SESSION['level_sispeg']=='1' && $_SESSION['active_sispeg']=='Y'){
         header('location:A');
     }
-    else if($_SESSION['level']=='2' && $_SESSION['active']=='Y'){
+    else if($_SESSION['level_sispeg']=='2' && $_SESSION['active_sispeg']=='Y'){
         header('location:G');
     }
     else {
@@ -120,15 +120,15 @@ if(isset($_POST['login'])){
 
 	if ($cek==1 ) {
 		$hasil=mysqli_fetch_array($sql);
-		$_SESSION['user']=$hasil['user'];
-		$_SESSION['nama']=$hasil['nama'];
-		$_SESSION['level']=$hasil['level'];
-		$_SESSION['active']=$hasil['active'];
+		$_SESSION['user_sispeg']=$hasil['user'];
+		$_SESSION['nama_sispeg']=$hasil['nama'];
+		$_SESSION['level_sispeg']=$hasil['level'];
+		$_SESSION['active_sispeg']=$hasil['active'];
 
-		if($_SESSION['level']=='1' && $_SESSION['active']=='Y'){
+		if($_SESSION['level_sispeg']=='1' && $_SESSION['active_sispeg']=='Y'){
 			header('location:A/index');
 		}
-		else if($_SESSION['level']=='2' && $_SESSION['active']=='Y'){
+		else if($_SESSION['level_sispeg']=='2' && $_SESSION['active_sispeg']=='Y'){
 			header('location:G/index');
 		}
 		else {
@@ -150,3 +150,6 @@ if(isset($_POST['login'])){
     <script src="vendor/js/sb-admin-2.min.js"></script>
 </body>
 </html>
+<?php
+ob_flush()
+?>

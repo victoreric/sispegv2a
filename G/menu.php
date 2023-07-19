@@ -1,10 +1,10 @@
 <?php
 session_start();
-if(!isset($_SESSION['nama'])){
+if(!isset($_SESSION['nama_sispeg'])){
    echo "<script> alert('Anda Belum Login'); window.location='../index.php'; </script>";
 } 
 
-$level=$_SESSION['level'];
+$level=$_SESSION['level_sispeg'];
 if($level=='2'){
 ?>
 <!-- MenuForGuest -->
@@ -149,7 +149,7 @@ if($level=='2'){
                         
                             <?php
                             include '../link.php';
-                            $nama=$_SESSION['nama'];
+                            $nama=$_SESSION['nama_sispeg'];
                             $queriU="SELECT foto FROM dtawal WHERE nama='$nama'";
                             $sqlU=mysqli_query($conn,$queriU);
                             $hasilU=mysqli_fetch_assoc($sqlU);
@@ -158,7 +158,7 @@ if($level=='2'){
                             <li class="nav-item dropdown no-arrow">
                                 <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <span class="mr-2 d-none d-lg-inline text-white-500 small"><?php echo $_SESSION['nama'];  ?></span>
+                                    <span class="mr-2 d-none d-lg-inline text-white-500 small"><?php echo $_SESSION['nama_sispeg'];  ?></span>
                                     <img class="img-profile rounded-circle" src="../assets/images/<?php echo $hasilU['foto'];  ?>">
                                 </a>
                                 <!-- Dropdown - User Information -->
